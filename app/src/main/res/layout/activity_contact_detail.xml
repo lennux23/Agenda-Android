@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop ="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="lennux.com.mx.contactos.ContactDetailActivity"
+    android:orientation="vertical">
+
+    <lennux.com.mx.contactos.RoundedImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/thumb_image_medium"
+        android:layout_height="@dimen/thumb_image_medium"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="2"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtNameDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/font_medium"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_medium"
+        />
+    <TextView
+        android:id="@+id/txtPhoneDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/font_medium"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/txtMailDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/font_medium"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
