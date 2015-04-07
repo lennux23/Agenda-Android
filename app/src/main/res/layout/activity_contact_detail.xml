@@ -14,6 +14,8 @@
         android:src="@mipmap/ic_launcher"
         android:layout_weight="2"
         android:layout_gravity="center"/>
+
+
     <TextView
         android:id="@+id/txtNameDetail"
         android:layout_width="match_parent"
@@ -24,21 +26,47 @@
         android:gravity="center"
         android:paddingBottom="@dimen/padding_medium"
         />
-    <TextView
-        android:id="@+id/txtPhoneDetail"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
-        android:textSize="@dimen/font_medium"
-        android:layout_weight="1"
-        />
-    <TextView
-        android:id="@+id/txtMailDetail"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_phone"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/txtPhoneDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/font_medium"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_xsmall"
+            />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world"
-        android:textSize="@dimen/font_medium"
-        android:layout_weight="1"
-        />
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_mail"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/txtMailDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/font_medium"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_xsmall"
+
+            />
+    </LinearLayout>
 
 </LinearLayout>
