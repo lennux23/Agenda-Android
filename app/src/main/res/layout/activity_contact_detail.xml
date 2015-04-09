@@ -10,60 +10,148 @@
     <lennux.com.mx.contactos.RoundedImageView
         android:id="@+id/profileImage"
         android:layout_width="@dimen/thumb_image_medium"
-        android:layout_height="@dimen/thumb_image_medium"
+        android:layout_height="240dp"
         android:src="@mipmap/ic_launcher"
-        android:layout_weight="2"
         android:layout_gravity="center"/>
 
 
     <TextView
         android:id="@+id/txtNameDetail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:text="@string/hello_world"
         android:textSize="@dimen/font_medium"
-        android:layout_weight="1"
         android:gravity="center"
         android:paddingBottom="@dimen/padding_medium"
+        android:layout_weight="2"
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/actionCall"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_phone"
+            android:layout_weight="1"
             android:gravity="left"/>
         <TextView
             android:id="@+id/txtPhoneDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="3"
             android:text="@string/hello_world"
-            android:textSize="@dimen/font_medium"
-            android:layout_weight="1"
+            android:textSize="@dimen/font_small"
             android:paddingLeft="@dimen/padding_xsmall"
             />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
-        <ImageView
-            android:layout_width="wrap_content"
+        <ImageButton
+            android:id="@+id/actionMail"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_mail"
-            android:gravity="left"/>
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@android:color/transparent"
+            />
         <TextView
             android:id="@+id/txtMailDetail"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/hello_world"
-            android:textSize="@dimen/font_medium"
+            android:textSize="@dimen/font_small"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/padding_xsmall"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/actionGithub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_github"
             android:layout_weight="1"
+            android:gravity="left"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/txtGithubDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/font_small"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/padding_xsmall"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/actionTwitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_twitter"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/txtTwitterDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/font_small"
+            android:layout_weight="3"
+            android:paddingLeft="@dimen/padding_xsmall"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/actionFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_facebook"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/txtFacebookDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_world"
+            android:textSize="@dimen/font_small"
+            android:layout_weight="3"
             android:paddingLeft="@dimen/padding_xsmall"
 
             />
